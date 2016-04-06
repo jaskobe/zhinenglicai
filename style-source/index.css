@@ -91,7 +91,7 @@ html{background: #fff}
 }
 .year-selected{
     color: #fff;
-    margin-top: -5px;
+    margin-top: -3px;
     transition:ease 0.2s;
     transform: scale(1.5);
 }
