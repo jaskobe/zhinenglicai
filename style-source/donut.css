@@ -1,0 +1,1042 @@
+/*6/4 Donut Update - PC*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.donut-button-container {
+    display: block;
+    font-size: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 59.3%;
+    width: 100%;
+    z-index: 2;
+    padding: 4px 0
+}
+
+
+.no-csstransitions.no-svg .donut-button-container {
+    left: -90px;
+    top: 350px
+}
+
+.no-csstransitions.svg .donut-button-container {
+    left: -55%;
+    top: 400px
+}
+
+.donut-button {
+    background-color: #1c2534;
+    border: none;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    padding: 0
+}
+
+.donut-button.pause .play,.donut-button.play .pause {
+    display: none
+}
+
+.pause,.play,.play-pause {
+    display: block;
+    margin: 0 auto;
+    height: 22px!important;
+    width: 52px!important
+}
+
+#sophisticated-portfolio .donut {
+    padding: 0
+}
+
+#sophisticated-portfolio .donut img {
+    margin-left: 0;
+    padding: 0;
+    width: 100%
+}
+
+.donut-wrapper {
+    width: 100%
+}
+
+.donut-container {
+    display: block;
+    left: 0;
+    max-width: 420px;
+    position: relative;
+    top: 36px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+
+.backup-container,.no-csstransitions .donut-container .donut .inner-circle-container,.no-csstransitions .donut-container .donut .pie-container,.no-csstransitions .donut-container .stocks-text {
+    display: none;
+    visibility: hidden
+}
+
+
+.donut-container .stocks-text {
+    color: #fff;
+    line-height: 1em;
+    font-size: 18px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center!important;
+    text-transform: uppercase;
+    top: 42%;
+    width: 100%;
+}
+
+
+.donut-container .stocks-text.intro {
+    top: 41.5%
+}
+
+
+
+.donut-container .stocks-text span {
+    font-size: .7em;
+    line-height: 0;
+    text-transform: none
+}
+
+.donut-container .donut {
+    height: 0;
+    left: 0;
+    margin: 20% 0;
+    padding-bottom: 100%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    -ms-transform-origin: 50%;
+    -moz-transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%
+}
+
+#sophisticated-portfolio .donut-container .donut {
+    height: 100%
+}
+
+#sophisticated-portfolio .donut-container .donut img {
+    margin-top: 0
+}
+
+.donut-container .donut.active {
+    cursor: default
+}
+
+.no-csstransitions .donut-container .donut {
+    height: 550px;
+    width: 600px
+}
+
+.donut-container .donut .inner-circle-container,.donut-container .donut .slice {
+    width: 100%
+}
+
+.donut-container .donut .pie-container {
+    height: 0;
+    padding-bottom: 100%;
+    position: absolute;
+    width: 100%
+}
+
+.backup-container,.donut-container .donut .inner-circle-container {
+    position: relative
+}
+
+.donut-container .donut .inner-ring {
+    display: block;
+    height: auto;
+    width: 100%;
+    -moz-transform-origin: center center 50%;
+    -ms-transform-origin: center center 50%;
+    -webkit-transform-origin: center center 50%;
+    transform-origin: center center 50%;
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    -moz-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -o-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.donut-container .donut .portions {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    -moz-transform: opacity .5s;
+    -ms-transform: opacity .5s;
+    -webkit-transform: opacity .5s;
+    transform: opacity .5s
+}
+
+.donut-container .donut .slice {
+    left: 0;
+    position: absolute;
+    top: 0
+}
+
+.donut-container .donut .slice-label {
+    color: #fff;
+    display: block;
+    height: 0;
+    left: 50%;
+    line-height: 1em;
+    margin: 0;
+    font-size: .6em;
+    overflow: visible;
+    padding: 0 0 0 53%!important;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    width: 100%;
+    -ms-transform-origin: left;
+    -moz-transform-origin: left;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    z-index: 100
+}
+
+
+.donut-container .donut .slice-label.one {
+    -moz-transform: rotate(-123deg);
+    -ms-transform: rotate(-123deg);
+    -webkit-transform: rotate(-123deg);
+    transform: rotate(-123deg);
+    -moz-transform: opacity;
+    -ms-transform: opacity;
+    -webkit-transform: opacity;
+    transform: opacity;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -moz-transition-delay: .8s;
+    -o-transition-delay: .8s;
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out
+}
+
+.donut-container .donut .slice-label.two {
+    -moz-transition: opacity .8s ease-out 1.1s;
+    -o-transition: opacity .8s ease-out 1.1s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.1s;
+    transition: opacity .8s ease-out 1.1s;
+    -moz-transform: rotate(-89deg);
+    -ms-transform: rotate(-89deg);
+    -webkit-transform: rotate(-89deg);
+    transform: rotate(-89deg)
+}
+
+.donut-container .donut .slice-label.three {
+    -moz-transform: rotate(-62deg);
+    -ms-transform: rotate(-62deg);
+    -webkit-transform: rotate(-62deg);
+    transform: rotate(-62deg);
+    -moz-transition: opacity .8s ease-out 1.2s;
+    -o-transition: opacity .8s ease-out 1.2s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.2s;
+    transition: opacity .8s ease-out 1.2s
+}
+
+.donut-container .donut .slice-label.four {
+    -moz-transform: rotate(-42deg);
+    -ms-transform: rotate(-42deg);
+    -webkit-transform: rotate(-42deg);
+    transform: rotate(-42deg);
+    -moz-transition: opacity .8s ease-out 1.3s;
+    -o-transition: opacity .8s ease-out 1.3s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.3s;
+    transition: opacity .8s ease-out 1.3s
+}
+
+.donut-container .donut .slice-label.five {
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    -moz-transition: opacity .8s ease-out 1.4s;
+    -o-transition: opacity .8s ease-out 1.4s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.4s;
+    transition: opacity .8s ease-out 1.4s
+}
+
+.donut-container .donut .slice-label.six {
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    -moz-transition: opacity .8s ease-out 1.5s;
+    -o-transition: opacity .8s ease-out 1.5s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.5s;
+    transition: opacity .8s ease-out 1.5s
+}
+
+.donut-container .donut .slice-label.seven {
+    -moz-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+    -moz-transition: opacity .8s ease-out 1.6s;
+    -o-transition: opacity .8s ease-out 1.6s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.6s;
+    transition: opacity .8s ease-out 1.6s
+}
+
+.donut-container .donut .slice-label.eight {
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -moz-transition: opacity .8s ease-out 1.7s;
+    -o-transition: opacity .8s ease-out 1.7s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.7s;
+    transition: opacity .8s ease-out 1.7s
+}
+
+.donut-container .donut .slice-label.nine {
+    -moz-transform: rotate(53deg);
+    -ms-transform: rotate(53deg);
+    -webkit-transform: rotate(53deg);
+    transform: rotate(53deg);
+    -moz-transition: opacity .8s ease-out 1.8s;
+    -o-transition: opacity .8s ease-out 1.8s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.8s;
+    transition: opacity .8s ease-out 1.8s
+}
+
+.donut-container .donut .slice-label.ten {
+    -moz-transform: rotate(69deg);
+    -ms-transform: rotate(69deg);
+    -webkit-transform: rotate(69deg);
+    transform: rotate(69deg);
+    -moz-transition: opacity .8s ease-out 1.9s;
+    -o-transition: opacity .8s ease-out 1.9s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 1.9s;
+    transition: opacity .8s ease-out 1.9s
+}
+
+.donut-container .donut .slice-label.eleven {
+    -moz-transform: rotate(84deg);
+    -ms-transform: rotate(84deg);
+    -webkit-transform: rotate(84deg);
+    transform: rotate(84deg);
+    -moz-transition: opacity .8s ease-out 2s;
+    -o-transition: opacity .8s ease-out 2s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 2s;
+    transition: opacity .8s ease-out 2s
+}
+
+.donut-container .donut .slice-label.twelve {
+    -moz-transform: rotate(91deg);
+    -ms-transform: rotate(91deg);
+    -webkit-transform: rotate(91deg);
+    transform: rotate(91deg);
+    -moz-transition: opacity .8s ease-out 2.1s;
+    -o-transition: opacity .8s ease-out 2.1s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 2.1s;
+    transition: opacity .8s ease-out 2.1s
+}
+
+.donut-container .donut .slice-label.thirdteen {
+    -moz-transform: rotate(98deg);
+    -ms-transform: rotate(98deg);
+    -webkit-transform: rotate(98deg);
+    transform: rotate(98deg);
+    -moz-transition: opacity .7s ease-out 2s;
+    -o-transition: opacity .7s ease-out 2s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2s;
+    transition: opacity .7s ease-out 2s
+}
+
+.donut-container .donut .slice-label.fourteen {
+    -moz-transform: rotate(107deg);
+    -ms-transform: rotate(107deg);
+    -webkit-transform: rotate(107deg);
+    transform: rotate(107deg);
+    -moz-transition: opacity .7s ease-out 2.1s;
+    -o-transition: opacity .7s ease-out 2.1s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2.1s;
+    transition: opacity .7s ease-out 2.1s
+}
+
+.donut-container .donut .slice-label.fifthteen {
+    -moz-transform: rotate(115deg);
+    -ms-transform: rotate(115deg);
+    -webkit-transform: rotate(115deg);
+    transform: rotate(115deg);
+    -moz-transition: opacity .7s ease-out 2.2s;
+    -o-transition: opacity .7s ease-out 2.2s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2.2s;
+    transition: opacity .7s ease-out 2.2s
+}
+
+.donut-container .donut .slice-label.sixteen {
+    -moz-transform: rotate(134deg);
+    -ms-transform: rotate(134deg);
+    -webkit-transform: rotate(134deg);
+    transform: rotate(134deg);
+    -moz-transition: opacity .7s ease-out 2.3s;
+    -o-transition: opacity .7s ease-out 2.3s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2.3s;
+    transition: opacity .7s ease-out 2.3s
+}
+
+.donut-container .donut .slice-label.seventeen {
+    -moz-transform: rotate(161deg);
+    -ms-transform: rotate(161deg);
+    -webkit-transform: rotate(161deg);
+    transform: rotate(161deg);
+    -moz-transition: opacity .8s ease-out 2.4s;
+    -o-transition: opacity .8s ease-out 2.4s;
+    -webkit-transition: opacity .8s ease-out;
+    -webkit-transition-delay: 2.4s;
+    transition: opacity .8s ease-out 2.4s
+}
+
+.donut-container .donut .slice-label.eighteen {
+    -moz-transform: rotate(182deg);
+    -ms-transform: rotate(182deg);
+    -webkit-transform: rotate(182deg);
+    transform: rotate(182deg);
+    -moz-transition: opacity .7s ease-out 2.2s;
+    -o-transition: opacity .7s ease-out 2.2s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2.2s;
+    transition: opacity .7s ease-out 2.2s
+}
+
+.donut-container .donut .slice-label.nineteen {
+    -moz-transform: rotate(208deg);
+    -ms-transform: rotate(208deg);
+    -webkit-transform: rotate(208deg);
+    transform: rotate(208deg);
+    -moz-transition: opacity .7s ease-out 2s;
+    -o-transition: opacity .7s ease-out 2s;
+    -webkit-transition: opacity .7s ease-out;
+    -webkit-transition-delay: 2s;
+    transition: opacity .7s ease-out 2s
+}
+
+.csstransitions .donut {
+    -moz-transform: rotate(-200deg);
+    -ms-transform: rotate(-200deg);
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg)
+}
+
+.csstransitions .donut.mobile-only {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+}
+
+.csstransitions .initial-state {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}
+
+.csstransitions .slice-label {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .slice {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -moz-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-zero,.csstransitions .slice {
+    -o-transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .slice.eight,.csstransitions .slice.eleven,.csstransitions .slice.five,.csstransitions .slice.four,.csstransitions .slice.nine,.csstransitions .slice.one,.csstransitions .slice.seven,.csstransitions .slice.six,.csstransitions .slice.ten,.csstransitions .slice.three,.csstransitions .slice.twelve,.csstransitions .slice.two {
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s
+}
+
+.csstransitions .slice.one {
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0
+}
+
+.csstransitions .slice.two {
+    -moz-transition-delay: .1s;
+    -o-transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s
+}
+
+.csstransitions .slice.three {
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s
+}
+
+.csstransitions .slice.four {
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s
+}
+
+.csstransitions .slice.five {
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s
+}
+
+.csstransitions .slice.six {
+    -moz-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s
+}
+
+.csstransitions .slice.seven {
+    -moz-transition-delay: .6s;
+    -o-transition-delay: .6s;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s
+}
+
+.csstransitions .slice.eight {
+    -moz-transition-delay: .7s;
+    -o-transition-delay: .7s;
+    -webkit-transition-delay: .7s;
+    transition-delay: .7s
+}
+
+.csstransitions .slice.nine {
+    -moz-transition-delay: .8s;
+    -o-transition-delay: .8s;
+    -webkit-transition-delay: .8s;
+    transition-delay: .8s
+}
+
+.csstransitions .slice.ten {
+    -moz-transition-delay: .9s;
+    -o-transition-delay: .9s;
+    -webkit-transition-delay: .9s;
+    transition-delay: .9s
+}
+
+.csstransitions .slice.eleven {
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s
+}
+
+.csstransitions .slice.twelve {
+    -moz-transition-delay: 1.1s;
+    -o-transition-delay: 1.1s;
+    -webkit-transition-delay: 1.1s;
+    transition-delay: 1.1s
+}
+
+.csstransitions .slice.fifthteen,.csstransitions .slice.fourteen,.csstransitions .slice.seventeen,.csstransitions .slice.sixteen,.csstransitions .slice.thirdteen {
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s
+}
+
+.csstransitions .slice.thirdteen {
+    -moz-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s
+}
+
+.csstransitions .slice.fourteen {
+    -moz-transition-delay: 1.6s;
+    -o-transition-delay: 1.6s;
+    -webkit-transition-delay: 1.6s;
+    transition-delay: 1.6s
+}
+
+.csstransitions .slice.fifthteen {
+    -moz-transition-delay: 1.7s;
+    -o-transition-delay: 1.7s;
+    -webkit-transition-delay: 1.7s;
+    transition-delay: 1.7s
+}
+
+.csstransitions .slice.sixteen {
+    -moz-transition-delay: 1.8s;
+    -o-transition-delay: 1.8s;
+    -webkit-transition-delay: 1.8s;
+    transition-delay: 1.8s
+}
+
+.csstransitions .slice.seventeen {
+    -moz-transition-delay: 1.9s;
+    -o-transition-delay: 1.9s;
+    -webkit-transition-delay: 1.9s;
+    transition-delay: 1.9s
+}
+
+.csstransitions .slice.eighteen,.csstransitions .slice.nineteen {
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s
+}
+
+.csstransitions .segment-zero {
+    -moz-transform: rotate(-200deg);
+    -ms-transform: rotate(-200deg);
+    -webkit-transform: rotate(-200deg);
+    transform: rotate(-200deg);
+    transition-duration: 3s;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-one,.csstransitions .segment-zero {
+    -moz-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -moz-transition-duration: 3s;
+    -o-transition-duration: 3s;
+    -webkit-transition-duration: 3s
+}
+
+.csstransitions .segment-zero .set-four,.csstransitions .segment-zero .set-one,.csstransitions .segment-zero .set-three,.csstransitions .segment-zero .set-two {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+}
+
+.csstransitions .segment-zero .slice-label.set-four,.csstransitions .segment-zero .slice-label.set-one,.csstransitions .segment-zero .slice-label.set-three,.csstransitions .segment-zero .slice-label.set-two {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .segment-one .slice-label.set-one,.csstransitions .segment-zero .portions {
+    opacity: 1;
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false)
+}
+
+.csstransitions .segment-one {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transition-duration: 3s;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-one,.csstransitions .segment-two {
+    -o-transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-one .inner-ring,.csstransitions .segment-one .set-one {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+.csstransitions .segment-one .inner-ring{
+    transform: scale(1)
+}
+.csstransitions .segment-one .set-four,.csstransitions .segment-one .set-three,.csstransitions .segment-one .set-two {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+}
+
+.csstransitions .segment-one .slice.nineteen {
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0
+}
+
+.csstransitions .segment-one .portions,.csstransitions .segment-one .slice-label.set-four,.csstransitions .segment-one .slice-label.set-three,.csstransitions .segment-one .slice-label.set-two {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .segment-one .slice-label.nineteen {
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0
+}
+
+.csstransitions .segment-two {
+    -moz-transform: rotate(224deg);
+    -ms-transform: rotate(224deg);
+    -webkit-transform: rotate(224deg);
+    transform: rotate(224deg);
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: 3.5s;
+    -o-transition-duration: 3.5s;
+    -webkit-transition-duration: 3.5s;
+    transition-duration: 3.5s;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    -moz-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-two .set-four,.csstransitions .segment-two .set-one,.csstransitions .segment-two .set-three {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5)
+}
+
+.csstransitions .segment-two .set-one,.csstransitions .segment-two .set-three,.csstransitions .segment-two .set-two {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s
+}
+
+.csstransitions .segment-two .slice-label.set-two {
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1
+}
+
+.csstransitions .segment-two .slice-label.set-four,.csstransitions .segment-two .slice-label.set-one,.csstransitions .segment-two .slice-label.set-three {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s
+}
+
+.csstransitions .segment-two .portions {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .segment-three {
+    -moz-transform: rotate(537deg);
+    -ms-transform: rotate(537deg);
+    -webkit-transform: rotate(537deg);
+    transform: rotate(537deg);
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: 3.5s;
+    -o-transition-duration: 3.5s;
+    -webkit-transition-duration: 3.5s;
+    transition-duration: 3.5s;
+    -moz-transition-delay: 0;
+    -o-transition-delay: 0;
+    -webkit-transition-delay: 0;
+    transition-delay: 0;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-four,.csstransitions .segment-three {
+    -moz-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -o-transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    -webkit-transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-three .set-three {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.csstransitions .segment-three .set-four,.csstransitions .segment-three .set-one,.csstransitions .segment-three .set-two {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s
+}
+
+.csstransitions .segment-three .slice.thirdteen {
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+.csstransitions .segment-three .slice.fourteen {
+    -moz-transition-delay: .1s;
+    -o-transition-delay: .1s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s
+}
+
+.csstransitions .segment-three .slice.fifthteen {
+    -moz-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s
+}
+
+.csstransitions .segment-three .slice.sixteen {
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s
+}
+
+.csstransitions .segment-three .slice.seventeen {
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s
+}
+
+.csstransitions .segment-three .slice-label.set-three {
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1
+}
+
+.csstransitions .segment-three .slice-label.set-four,.csstransitions .segment-three .slice-label.set-one,.csstransitions .segment-three .slice-label.set-two {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s
+}
+
+.csstransitions .segment-three .portions {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .segment-four {
+    -moz-transform: rotate(870deg);
+    -ms-transform: rotate(870deg);
+    -webkit-transform: rotate(870deg);
+    transform: rotate(870deg);
+    -moz-transform: transform;
+    -ms-transform: transform;
+    -webkit-transform: transform;
+    transform: transform;
+    -moz-transition-duration: 3.5s;
+    -o-transition-duration: 3.5s;
+    -webkit-transition-duration: 3.5s;
+    transition-duration: 3.5s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955)
+}
+
+.csstransitions .segment-four .set-four {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.csstransitions .segment-four .set-one,.csstransitions .segment-four .set-three,.csstransitions .segment-four .set-two {
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s
+}
+
+.csstransitions .segment-four .slice.eighteen {
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+.csstransitions .segment-four .slice-label.set-four {
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1
+}
+
+.csstransitions .segment-four .slice-label.set-one,.csstransitions .segment-four .slice-label.set-three,.csstransitions .segment-four .slice-label.set-two {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s
+}
+
+.csstransitions .segment-four .portions {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.csstransitions .loop {
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    -webkit-transition-duration: 2s;
+    transition-duration: 2s
+}
+
+.csstransitions .restart {
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transition: -moz-transform 0s;
+    -o-transition: -o-transform 0s;
+    -webkit-transition: -webkit-transform 0s;
+    transition: transform 0s
+}
+
+.csstransitions .restart .slice.eighteen {
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+.csstransitions .restart .slice-label.eighteen {
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s
+}
+
+.backup-container {
+    left: 0;
+    padding: 0;
+    top: 0
+}
+
+.no-csstransitions .backup-container {
+    display: block;
+    visibility: visible
+}
+
+.older-browsers-backup {
+    cursor: default;
+    display: block;
+    float: right;
+    left: 0;
+    height: auto;
+    position: relative;
+    top: 0;
+    width: 550px
+}
