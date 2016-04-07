@@ -193,7 +193,7 @@ $(document).ready(function(){
             series : [
                 {
                     name: 'pm2.5',
-                    type: 'scatter',
+                    type: 'effectScatter',
                     coordinateSystem: 'geo',
                     data: convertData(data),
                     symbolSize: function(val){
@@ -214,9 +214,8 @@ $(document).ready(function(){
                         }
                     },
                     itemStyle: {
-                        normal: {
-
-
+                        normal:{
+                            borderWidth:10
                         }
                     }
                 },
