@@ -79,6 +79,14 @@
     margin: 0 auto;
     position: relative;
 }
+.part6 .container{
+    width: 1150px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    height: 680px;
+    overflow: hidden;
+}
 /*footer*/
 footer{
     width: 100%;
