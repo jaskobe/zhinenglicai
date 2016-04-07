@@ -2,7 +2,7 @@
 /* CSS Document */
 .invest-con{width: 400px; float: left;position: relative}
 .invest-bili{position: absolute;width: 150px;height: 80px;left: 125px;top:170px;text-align: center;color:#999}
-.invest-bili p{line-height: 50px;font-size: 50px;margin:0;color: #00a9f1;font-weight: normal}
+.invest-bili p{line-height: 50px;font-size: 50px;margin:0;color: #00a9f1;font-weight: normal;}
 .invest-bili p span{color:#5e65b5}
 #invest-list{ width: 300px; position: relative;}
 .invest-listnav{border: 1px solid #5e65b5; overflow: hidden;width: 162px; padding: 0;margin: 0 119px; line-height: 30px;text-align: center}
