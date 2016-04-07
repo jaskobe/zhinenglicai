@@ -32,7 +32,12 @@
     </div>
 
     <!--Private Style-->
+    <!--<link href="style-source/frame.css" rel="stylesheet">-->
+    <!-- <link href="style-source/based.css" rel="stylesheet">-->
     <link href="style-source/index.css" rel="stylesheet">
+    <link href="style-source/donut.css" rel="stylesheet">
+    <link href="style-source/homepage.css" rel="stylesheet">
+
     <!--Private Style End-->
 
     <!--Dom Here-->
@@ -79,6 +84,10 @@
         <div class="container">
             <p class="part-title">多元化的投资组合</p>
             <p class="part-sub-title">包含了股票,债券,大宗商品和房地产信托在内的26种资产</p>
+            <div data-size="desktop" class="donut-wrapper" id="donut-wrapper" aria-label="Animation: A diversified portfolio composed of low-cost exchange-traded funds (ETFs)">
+                <div class="donut-container" id="donut-container">
+                </div>
+            </div>
         </div>
     </section>
     <section class="part part4">
@@ -88,9 +97,6 @@
             <img class="lazy" data-original="image/alpha/etf-flow.svg" alt="ETF筛选流程" style="margin-top: 20px">
         </div>
     </section>
-    <link href="style-source/based.css" rel="stylesheet">
-    <link href="style-source/frame.css" rel="stylesheet">
-    <link href="style-source/homepage.css" rel="stylesheet">
     <section class="part part5 hp-module-bordered hp-performance-nugget" id="hp-performance-nugget">
         <div class="pure-g-r wf-full-g">
 
@@ -145,10 +151,6 @@
                 <div class="middle-lb axis-lable-text">10年<br>基于10W美元的投资</div>
             </div>
         </div>
-        <!--<div class="container">
-            <p class="part-title">智能理财的量化策略如何加强收益</p>
-            <img class="lazy" data-original="image/alpha/etf-flow.svg" alt="ETF筛选流程" style="margin-top: 20px">
-        </div>-->
     </section>
     <section class="part part6">
         <div class="container">
@@ -234,10 +236,133 @@
     <script src="js-source/index.js"></script>
 
  <!--   <script src="js-source/jquery_with.js"></script>-->
+    <!--<script src="js-source/file.js"></script>-->
+    <script src="js-source/file_002.js"></script>
+    <script src="js-source/donut.js"></script>
     <script src="js-source/base.js"></script>
     <script src="js-source/reactive.js"></script>
     <script src="js-source/d3.js"></script>
     <script src="js-source/performance.js"></script>
+
+    <script type="javascript:tmpl" id="cssTransitionDom">
+		<div class="donut" id="donut" data-state="segment-one">
+			<div class="pie-container">
+				<img class="slice set-one one" alt="US Large Company Stocks segment" src="img/file_025.png" />
+				<p class="slice-label set-one one">US Large
+					<br />Company Stocks</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one two" alt="US Large Company Stocks - Fundamental segment" src="img/file_017.png" />
+				<p class="slice-label set-one two">US Large Company
+					<br />Stocks - Fundamental</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one three" alt="US Small Company Stocks segment" src="img/file_019.png" />
+				<p class="slice-label set-one three">US Small
+					<br />Company Stocks</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one four" alt="US Small Company Stocks - Fundamental segment" src="img/file_022.png" />
+				<p class="slice-label set-one four">US Small Company
+					<br />Stocks - Fundamental</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one five" alt="International Developed Large Company Stocks segment" src="img/file_018.png" />
+				<p class="slice-label set-one five">International Developed
+					<br />Large Company Stocks</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one six" alt="International Developed Large Company Stocks - Fundamental segment" src="img/file_024.png" />
+				<p class="slice-label set-one six">International Developed
+					<br />Large Company
+					<br />Stocks - Fundamental</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one seven" alt="International Developed Small Company Stocks segment" src="img/file_012.png" />
+				<p class="slice-label set-one seven">International Developed
+					<br />Small Company Stocks</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one eight" alt="International Developed Small Company segment" src="img/file_027.png" />
+				<p class="slice-label set-one eight">International Developed
+					<br />Small Company
+					<br />Stocks - Fundamental</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one nine" alt="International Emerging Market Stocks segment" src="img/file_016.png" />
+				<p class="slice-label set-one nine">International Emerging
+					<br />Market Stocks</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one ten" alt="International Emerging Market Stocks - Fundamental segment" src="img/file_028.png" />
+				<p class="slice-label set-one ten">International Emerging
+					<br />Market Stocks - Fundamental</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one eleven" alt="US Exchange-Traded REITs segment" src="img/file_011.png" />
+				<p class="slice-label set-one eleven">US Exchange-Traded REITs</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-one twelve" alt="International Exchange-Traded REITs segment" src="img/file_023.png" />
+				<p class="slice-label set-one twelve">International
+					<br />Exchange-Traded REITs</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-two thirdteen" alt="US Investment Grade Corporate Bonds segment" src="img/file_003.png" />
+				<p class="slice-label set-two thirdteen">US Investment Grade
+					<br />Corporate Bonds</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-two fourteen" alt="US Securitized Bonds" src="img/file.png" />
+				<p class="slice-label set-two fourteen">US Securitized Bonds</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-two fifthteen" alt="International Developed Country Bonds segment" src="img/file_009.png" />
+				<p class="slice-label set-two fifthteen">International Developed
+					<br />Country Bonds</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-two sixteen" alt="US Corporate High Yield Bonds segment" src="img/file_004.png" />
+				<p class="slice-label set-two sixteen">US Corporate
+					<br />High Yield Bonds</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-two seventeen" alt="International Emerging Market Bonds segment" src="img/file_007.png" />
+				<p class="slice-label set-two seventeen">International Emerging
+					<br />Market Bonds</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-three eighteen" alt="Gold and other Precious Metals segment" src="img/file_005.png" />
+				<p class="slice-label set-three eighteen">Gold and Other
+					<br />Precious Metals</p>
+			</div>
+			<div class="pie-container">
+				<img class="slice set-four nineteen" alt="Cash" src="img/file_002.png" />
+				<p class="slice-label set-four nineteen">Cash</p>
+			</div>
+			<div class="inner-circle-container">
+				<img class="inner-ring initial-state" id="inner-ring" alt="Stock" src="img/file_010.png" />
+				<img class="inner-ring portions" id="inner-ring-portions" alt="Intelligent Portfolios portfolio management animation" src="img/file_015.png" />
+			</div>
+		</div>
+		<p class="stocks-text intro" id="stocks-text">Sample
+			<br />Portfolio
+			<br />
+			<span>Portfolios will have up to
+				<br />20 asset classes</span>
+		</p>
+	</script>
+    <script type="javascript:tmpl" id="buttonsMarkup">
+<div class="donut-button-container">
+			<button type="button" class="donut-button pause" id="donut-button" aria-label="Portfolio management animation">
+				<span class="visuallyhidden">Pause</span>
+				<span class="visuallyhidden">Play</span>
+				<img src="img/file_020.png" class="play-pause" id="play-pause" aria-hidden="true" alt="play-pause" />
+				<img src="img/file_008.png" class="play" aria-hidden="true" alt="play" />
+				<img src="img/file_006.png" class="pause" aria-hidden="true" alt="pause" />
+			</button>
+		</div>
+</script>
     <script>
         $("img.lazy").lazyload({
             placeholder: 'image/loading-logo.gif',
