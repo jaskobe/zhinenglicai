@@ -13,7 +13,11 @@
     <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js-source"></script>
     <script src="//cdn.bootcss.com/respond.js-source/1.4.2/respond.min.js-source"></script>
     <![endif]-->
+    <script src="js-source/jquery-2.1.4.min.js"></script>
+    <script src="js-source/jquery.range.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="style-source/jquery.range.css">
+    <link rel="stylesheet" type="text/css" href="style-source/asset_allocation.css">
 </head>
 <body>
     <!--navigation here-->
@@ -154,6 +158,55 @@
     </section>
     <section class="part part6">
         <div class="container">
+            <div class="invest-con">
+                <div id="main" style="width: 400px;height:400px;"></div>
+                <div class="invest-bili">
+                    <p><span>70</span>/30</p>
+                    股票  债券
+                </div>
+                <div id="invest-list">
+                    <div class="invest-listnav">
+                        <ul>
+                            <li class="invest-nav1 active">股票</li>
+                            <li class="invest-nav2">证券</li>
+                        </ul>
+                    </div>
+
+                    <div class="invest-list1">
+                        <ul>
+                            <li><i class="dli0"></i>股票<span class="di0"></span><span class="da0"></span></li>
+                            <li><i class="dli1"></i>股票<span class="di1"></span><span class="da1"></span></li>
+                            <li><i class="dli2"></i>股票<span class="di2"></span><span class="da2"></span></li>
+                            <li><i class="dli3"></i>股票<span class="di3"></span><span class="da3"></span></li>
+                            <li><i class="dli4"></i>股票<span class="di4"></span><span class="da4"></span></li>
+                        </ul>
+                    </div>
+                    <div class="invest-list2">
+                        <ul>
+                            <li><i class="dli5"></i>证券<span class="di5"></span><span class="da5"></span></li>
+                            <li><i class="dli6"></i>证券<span class="di6"></span><span class="da6"></span></li>
+                            <li><i class="dli7"></i>证券<span class="di7"></span><span class="da7"></span></li>
+                            <li><i class="dli8"></i>证券<span class="di8"></span><span class="da8"></span></li>
+                            <li><i class="dli9"></i>证券<span class="di9"></span><span class="da9"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="invest-warp">
+                <p>您的初始值是<input class="initnum" type="text" value="1000" onblur="range_num()"></p>
+                <p>一年之后您能承担的风险是<span class="risk-num">10%~20%</span></p>
+                <div class="demo">
+                    <input class="range-slider" type="hidden" value="-10,10"/>
+
+                </div>
+                <div id="main1" style="width: 750px;height:400px;margin-top: 30px;margin-left: -80px;"></div>
+                <div class="demo">
+                    <p style="margin-top: 0">您的投资年限是<span class="risk-year">23年</span></p>
+                    <input type="hidden" class="single-slider" value="23"/>
+
+                </div>
+
+            </div>
         </div>
     </section>
     <section class="part part7">
@@ -228,7 +281,7 @@
     <!--Dom End-->
 
     <!--js-source-->
-    <script src="js-source/jquery.min.js"></script>
+    <!--<script src="js-source/jquery.min.js"></script>-->
     <script src="js-source/jquery.lazyload.js"></script>
     <!--Private JS-->
     <script src="http://cdn.bootcss.com/echarts/3.0.0/echarts.min.js"></script>
@@ -243,6 +296,7 @@
     <script src="js-source/reactive.js"></script>
     <script src="js-source/d3.js"></script>
     <script src="js-source/performance.js"></script>
+    <script src="js-source/asset_allocation.js"></script>
 
     <script type="javascript:tmpl" id="cssTransitionDom">
 		<div class="donut" id="donut" data-state="segment-one">
