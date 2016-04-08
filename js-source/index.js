@@ -1,7 +1,7 @@
 /**
  * Created by Jasko on 3/30/16.
  */
-$(document).ready(function(){
+;$(document).ready(function(){
     $("#num").on("blur",function(){
         var year = $("#num").val();
         console.log(year);

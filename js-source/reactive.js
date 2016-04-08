@@ -1,4 +1,4 @@
-!
+;!
     function() {
         var n = function(n) {
             return n

@@ -1,4 +1,4 @@
-(function() {
+;(function() {
     var t = this,
         e = t._,
         n = {},

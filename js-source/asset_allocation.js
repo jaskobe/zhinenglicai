@@ -1,5 +1,5 @@
 
-var myChart = echarts.init(document.getElementById('main'));
+;var myChart = echarts.init(document.getElementById('main'));
 myChart.setOption({
 //    tooltip: {
 //        trigger: 'item',

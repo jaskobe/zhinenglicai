@@ -1,4 +1,4 @@
-!
+;!
     function() {
         function n(n) {
             return n && (n.ownerDocument || n.document || n).documentElement

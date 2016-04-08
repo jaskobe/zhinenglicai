@@ -1,6 +1,6 @@
 // 1016 Donut Update - PC
 
-var donut = function(t) {
+;var donut = function(t) {
     "use strict";
     var n, e, a, o, s, i, r, u, d, l, c, m, f, p, g, C, v, b, w, k, y, h, T, I, z, D, P, E, S, _ = {},
         O = $(window),
