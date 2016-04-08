@@ -257,7 +257,7 @@ $(function(){
     $('.range-slider').jRange({
         from: -25,
         to: 25,
-        step: 5,
+        step: 1,
         scale: [-25,-20,-15,-10,-5,0,5,10,15,20,25],
         format: '%s',
         width: 600,
