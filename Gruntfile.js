@@ -8,8 +8,15 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'js-source/*.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                files:[
+                    {
+                        expand: true,     // Enable dynamic expansion.
+                        cwd: 'js-source/',      // Src matches are relative to this path.
+                        src: '*.js', // Actual pattern(s) to match.
+                        dest: 'js/',   // Destination path prefix.
+                        ext: '.min.js'  // Dest filepaths will have this extension.
+                    }
+                ]
             }
         }
     });

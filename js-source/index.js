@@ -235,7 +235,6 @@
         yearLi = $(".year-list>li");
     function changeYear(){
         $(this).addClass("year-selected").siblings().removeClass("year-selected");
-        console.log(1);
 
     }
     yearLi.on('click',function(){
@@ -254,4 +253,4 @@
         drawWorldMap(y);
     })
 
-})
+});
