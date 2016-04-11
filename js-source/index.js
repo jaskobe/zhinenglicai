@@ -127,7 +127,7 @@
             '秘鲁':[-74.29,-10.25],
             '希腊':[21.96,38.8],
             '阿根廷':[-64.37,-35.48],
-            '俄罗斯':[44.37,55.39],
+            '俄罗斯':[44.37,55.39]
 
         };
 
@@ -218,7 +218,7 @@
                             borderWidth:10
                         }
                     }
-                },
+                }
 
             ]
         };
@@ -238,10 +238,10 @@
 
     }
     yearLi.on('click',function(){
+        yearSelect.val($(this).html());
         $(this).addClass("year-selected").siblings().removeClass("year-selected");
-        yearSelect.val($(this).html())
         drawWorldMap($(this).html());
-    })
+    });
 
     yearSelect.on('input',function(){
         var y = $(this).val();
@@ -249,7 +249,7 @@
             if($(this).html() == y){
                 $(this).addClass("year-selected").siblings().removeClass("year-selected");
             }
-        })
+        });
         drawWorldMap(y);
     })
 

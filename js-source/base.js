@@ -1305,13 +1305,13 @@ var w = w || {};
                 var e = t.length;
                 if (J >= e) return String.fromCharCode.apply(String, t);
                 for (var n = "", r = 0; e > r;) n += String.fromCharCode.apply(String, t.slice(r, r += J));
-                return n
+                return n;
             }
             function C(t, e, n) {
                 var r = "";
                 n = Math.min(t.length, n);
                 for (var i = e; n > i; i++) r += String.fromCharCode(127 & t[i]);
-                return r
+                return r;
             }
             function A(t, e, n) {
                 var r = "";
@@ -1323,50 +1323,50 @@ var w = w || {};
                 var r = t.length;
                 (!e || 0 > e) && (e = 0), (!n || 0 > n || n > r) && (n = r);
                 for (var i = "", o = e; n > o; o++) i += q(t[o]);
-                return i
+                return i;
             }
             function N(t, e, n) {
                 for (var r = t.slice(e, n), i = "", o = 0; o < r.length; o += 2) i += String.fromCharCode(r[o] + 256 * r[o + 1]);
-                return i
+                return i;
             }
             function P(t, e, n) {
                 if (t % 1 !== 0 || 0 > t) throw new RangeError("offset is not uint");
-                if (t + e > n) throw new RangeError("Trying to access beyond buffer length")
+                if (t + e > n) throw new RangeError("Trying to access beyond buffer length");
             }
             function M(t, e, n, r, o, a) {
                 if (!i.isBuffer(t)) throw new TypeError("buffer must be a Buffer instance");
                 if (e > o || a > e) throw new RangeError("value is out of bounds");
-                if (n + r > t.length) throw new RangeError("index out of range")
+                if (n + r > t.length) throw new RangeError("index out of range");
             }
             function R(t, e, n, r) {
                 0 > e && (e = 65535 + e + 1);
-                for (var i = 0, o = Math.min(t.length - n, 2); o > i; i++) t[n + i] = (e & 255 << 8 * (r ? i : 1 - i)) >>> 8 * (r ? i : 1 - i)
+                for (var i = 0, o = Math.min(t.length - n, 2); o > i; i++) t[n + i] = (e & 255 << 8 * (r ? i : 1 - i)) >>> 8 * (r ? i : 1 - i);
             }
             function D(t, e, n, r) {
                 0 > e && (e = 4294967295 + e + 1);
-                for (var i = 0, o = Math.min(t.length - n, 4); o > i; i++) t[n + i] = e >>> 8 * (r ? i : 3 - i) & 255
+                for (var i = 0, o = Math.min(t.length - n, 4); o > i; i++) t[n + i] = e >>> 8 * (r ? i : 3 - i) & 255;
             }
             function I(t, e, n, r, i, o) {
                 if (e > i || o > e) throw new RangeError("value is out of bounds");
                 if (n + r > t.length) throw new RangeError("index out of range");
-                if (0 > n) throw new RangeError("index out of range")
+                if (0 > n) throw new RangeError("index out of range");
             }
             function F(t, e, n, r, i) {
-                return i || I(t, e, n, 4, 3.4028234663852886e38, -3.4028234663852886e38), G.write(t, e, n, r, 23, 4), n + 4
+                return i || I(t, e, n, 4, 3.4028234663852886e38, -3.4028234663852886e38), G.write(t, e, n, r, 23, 4), n + 4;
             }
             function $(t, e, n, r, i) {
-                return i || I(t, e, n, 8, 1.7976931348623157e308, -1.7976931348623157e308), G.write(t, e, n, r, 52, 8), n + 8
+                return i || I(t, e, n, 8, 1.7976931348623157e308, -1.7976931348623157e308), G.write(t, e, n, r, 52, 8), n + 8;
             }
             function L(t) {
                 if (t = B(t).replace(Z, ""), t.length < 2) return "";
                 for (; t.length % 4 !== 0;) t += "=";
-                return t
+                return t;
             }
             function B(t) {
-                return t.trim ? t.trim() : t.replace(/^\s+|\s+$/g, "")
+                return t.trim ? t.trim() : t.replace(/^\s+|\s+$/g, "");
             }
             function q(t) {
-                return 16 > t ? "0" + t.toString(16) : t.toString(16)
+                return 16 > t ? "0" + t.toString(16) : t.toString(16);
             }
             function U(t, e) {
                 e = e || 1 / 0;
@@ -1402,7 +1402,7 @@ var w = w || {};
                     } else {
                         if (!(1114112 > n)) throw new Error("Invalid code point");
                         if ((e -= 4) < 0) break;
-                        o.push(n >> 18 | 240, n >> 12 & 63 | 128, n >> 6 & 63 | 128, 63 & n | 128)
+                        o.push(n >> 18 | 240, n >> 12 & 63 | 128, n >> 6 & 63 | 128, 63 & n | 128);
                     }
                 }
                 return o
