@@ -1,5 +1,5 @@
 
-;var myChart = echarts.init(document.getElementById('main'));
+var myChart = echarts.init(document.getElementById('main'));
 myChart.setOption({
 //    tooltip: {
 //        trigger: 'item',
@@ -13,6 +13,7 @@ myChart.setOption({
             }
         ]
     },
+
     color:['#71deff','#30c9fd','#00b3ff','#0095ff','#0080ff','#006cd6','#5e65b5','#666ec4','#6e77d4','#7781e6'],
     series: [
         {
@@ -20,6 +21,7 @@ myChart.setOption({
             type:'pie',
             radius: ['40%', '70%'],
             avoidLabelOverlap: false,
+            hoverAnimation:false,
             label: {
                 normal: {
                     show: false,
@@ -76,7 +78,17 @@ quxianChart.setOption({
 //        subtext: '纯属虚构'
 //    },
     tooltip: {
-        trigger: 'axis'
+        trigger: 'item',
+        formatter: "${c} <br/>{a}",
+        position:'top',
+        backgroundColor: '#fff',
+        borderColor:'#999',
+        borderWidth:1,
+        padding:[0,20],
+        textStyle:{
+            color:'#18b2f3',
+            fontSize:20
+        }
     },
 //    legend: {
 //        data:['意向','预购','成交']
@@ -132,7 +144,7 @@ quxianChart.setOption({
             type: 'line',
             smooth: true,
             symbolSize :5,
-            showSymbol:false,
+//            showSymbol:false,
             areaStyle: {normal: {
                 color: '#edeef8'
             }},
@@ -156,7 +168,7 @@ quxianChart.setOption({
             type: 'line',
             smooth: true,
             symbolSize :5,
-            showSymbol:false,
+//            showSymbol:false,
             areaStyle: {normal: {
                 color: '#e1e3f6'
             }},
@@ -180,7 +192,7 @@ quxianChart.setOption({
             type: 'line',
             smooth: true,
             symbolSize :5,
-            showSymbol:false,
+//            showSymbol:false,
             areaStyle: {
                 normal: {
                     color: '#e1e3f6'
@@ -206,7 +218,7 @@ quxianChart.setOption({
             type: 'line',
             smooth: true,
             symbolSize :5,
-            showSymbol:false,
+//            showSymbol:false,
             itemStyle:{
                 normal:{
                     color:'#1ba6f9',
@@ -228,19 +240,19 @@ quxianChart.setOption({
 
 });
 
-$('.invest-nav1').click(function(){
+$(function() {
 
-    $('.invest-nav1').addClass('active');
-    $('.invest-list1').css('display','block');
-    $('.invest-nav2').removeClass('active');
-    $('.invest-list2').css('display','none');
-});
-$('.invest-nav2').click(function(){
-    $('.invest-nav2').addClass('active');
-    $('.invest-list2').css('display','block');
-    $('.invest-nav1').removeClass('active');
-    $('.invest-list1').css('display','none');
-});
+    $('#invest-list .invest-list-con').width(300 * $('#invest-list .invest-list-con ul').length + 'px');
+    $("#invest-list .invest-listnav li").mouseover(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        var index = $(this).index();
+        number = index;
+        var distance = -300 * index;
+        $('#invest-list .invest-list-con').stop().animate({
+            left: distance
+        });
+    });
+})
 
 
 $(function(){
@@ -257,7 +269,7 @@ $(function(){
     $('.range-slider').jRange({
         from: -25,
         to: 25,
-        step: 1,
+        step: 5,
         scale: [-25,-20,-15,-10,-5,0,5,10,15,20,25],
         format: '%s',
         width: 600,
@@ -308,6 +320,7 @@ $(function(){
                     type:'pie',
                     radius: ['40%', '70%'],
                     avoidLabelOverlap: false,
+                    hoverAnimation:false,
                     label: {
                         normal: {
                             show: false,
@@ -335,7 +348,7 @@ $(function(){
         var arraytest2= [aa*1+ee/10,aa*2+ee/10,aa*3+ee/10];
         quxianChart.setOption({
             tooltip: {
-                trigger: 'axis'
+                trigger: 'item'
             },
 //    legend: {
 //        data:['意向','预购','成交']
@@ -528,6 +541,7 @@ function range_num(){
                 type:'pie',
                 radius: ['40%', '70%'],
                 avoidLabelOverlap: false,
+                hoverAnimation:false,
                 label: {
                     normal: {
                         show: false,
@@ -555,7 +569,7 @@ function range_num(){
     var arraytest2= [aa*1+ee/10,aa*2+ee/10,aa*3+ee/10];
     quxianChart.setOption({
         tooltip: {
-            trigger: 'axis'
+            trigger: 'item'
         },
 //    legend: {
 //        data:['意向','预购','成交']
